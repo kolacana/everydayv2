@@ -63,7 +63,7 @@ body{
 	position: fixed;
 	bottom: 0px;
 	height: 50px;
-	background-color: ghostwhite;
+	background-color: rgba(248,248,255,0.95);
 	text-align: center;
 	z-index: 999;
 	border-top: 1px solid lightgray;
