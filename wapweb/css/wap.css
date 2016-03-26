@@ -1,20 +1,155 @@
 /*wap css*/
 /*公共样式*/
-body{
-	font-size: 12px;
+@font-face {font-family: 'webfont';
+  src: url('//at.alicdn.com/t/c2nipt7xgu2qpvi.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/c2nipt7xgu2qpvi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/c2nipt7xgu2qpvi.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/c2nipt7xgu2qpvi.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/c2nipt7xgu2qpvi.svg#思源黑体-极细') format('svg'); /* iOS 4.1- */
 }
+
+body{
+    font-family:"webfont" !important;
+    font-size:14px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+	font-size: 14px;
+	margin: 50px 0px;
+	background-color: #EFEFEF;
+}
+.martop10{
+	margin-top: 10px;
+}
+.martop2{
+	margin-top: 2px;
+}
+.fontdarkgray{
+	color: darkgray;
+}
+.fontorangered{
+	color: orangered;
+}
+.cart-add-icon{
+	display: block;
+	width:22px;
+	height:22px;
+	margin-top: 10px;
+	background: url(../images/iconfont-jiahao.png);
+}
+
+
+/*header style*/
 .top-pos{
-	height:40px;
-	/*position: fixed;*/
+	position: fixed;
 	top:0px;
+	height:50px;
 	background-color: lawngreen;
 	text-align: center;
+	padding: 15px 10px;
+	z-index: 999;
 }
-.top-pos span{
+.top-pos-icon{
+	padding:0px;
+	text-align: center;
+	line-height: 12px;
+}
+.top-icon{
 	font-size: 20px;
 }
-.top-pos p{
-	-webkit-text-size-adjust:none;
+
+/*footer style*/
+.foot-nav{
+	position: fixed;
+	bottom: 0px;
+	height: 50px;
+	background-color: ghostwhite;
+	text-align: center;
+	z-index: 999;
+	border-top: 1px solid lightgray;
 	font-size: 12px;
-	line-height: 12px;
+	padding-top: 3px;
+}
+.foot-nav img{
+	width：30px;
+	height: 30px;
+	margin:0 auto;
+}
+
+/*slide style*/
+.carousel-indicators li{
+	background-color: white;
+	border:1px solid lawngreen;
+}
+.carousel-indicators li.active{
+	width:10px;
+	height: 10px;
+	background-color: lawngreen;
+}
+
+/*index tools style*/
+.index-tools{
+	background-color: white;
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 12px;
+}
+.index-tools img{
+	margin-bottom: 5px;
+}
+
+/*index special style*/
+.index-special{
+	background-color: white;
+}
+.index-special table{
+	width:100%;
+	border-collapse: collapse;
+}
+.index-special table td{
+	height: 60px;
+	border: 1px solid #EFEFEF;
+}
+.index-special table td img{
+	width:100%;
+	height: 60px;
+}
+
+/*index cate list style*/
+.index-catlist{
+	background-color: white;
+	padding-bottom: 10px;
+}
+.index-catlist div.title{
+	height: 40px;
+	padding:10px 10px;
+}
+.index-catlist div.title span.title{
+	display: inline-block;
+	padding-left: 10px;
+	border-left: 5px solid deepskyblue;
+	color: deepskyblue;
+}
+.catelist-pro{
+	width:100%;
+	text-align: center;
+	
+}
+.catelist-pro td{
+	padding: 5px;
+	text-align: left;
+}
+.catelist-pro td.center{
+	border-left:1px solid #EFEFEF;
+	border-right:1px solid #EFEFEF;
+	border-collapse: collapse;
+}
+.catelist-pro td img{
+	display: block;
+	margin:0 auto;
+	margin-bottom: 5px;
+}
+.catelist-pro td span{
+	display: block;
+	font-size: 12px;
 }
